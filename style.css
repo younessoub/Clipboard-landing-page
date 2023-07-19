@@ -179,6 +179,15 @@ footer {
     color: hsl(228, 45%, 44%);
 }
 
+svg {
+    cursor: pointer;
+
+}
+
+svg:hover path {
+    fill: var(--StrongCyan);
+}
+
 @media (min-width:1000px) {
     .desktop {
         display: block;
