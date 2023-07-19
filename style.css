@@ -1,0 +1,264 @@
+:root {
+    --StrongCyan: hsl(171, 66%, 44%);
+    --LightBlue: hsl(233, 100%, 69%);
+    --DarkGrayishBlue: hsl(210, 10%, 33%);
+    --GrayishBlue: hsl(201, 11%, 66%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+
+/* utilitu classes start */
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* utilitu classes end */
+
+body {
+    padding: 90px 6%;
+}
+
+header {
+    margin-bottom: 100px;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+.desktop {
+    display: none;
+}
+
+.bg-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -5;
+}
+
+
+.logo img {
+    width: 100px;
+    margin-bottom: 50px;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--DarkGrayishBlue);
+    text-align: center;
+    font-weight: 700;
+}
+
+p {
+    color: var(--GrayishBlue);
+    margin-top: 15px;
+    text-align: center;
+}
+
+.download-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.download-buttons a {
+    background-color: var(--StrongCyan);
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+    border-radius: 50px;
+    box-shadow: 0 2px 3px var(--DarkGrayishBlue);
+}
+
+.download-buttons a:hover {
+    opacity: .8;
+}
+
+.download-buttons a:last-child {
+    background-color: var(--LightBlue);
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 200px;
+}
+
+.features {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.features-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.devices-img {
+    margin-top: 50px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features.second h3 {
+    margin-top: 20px;
+}
+
+.brands {
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+footer {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer-logo img {
+    width: 60px;
+}
+
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links a {
+    margin-top: 20px;
+    color: var(--GrayishBlue);
+    font-weight: 700;
+}
+
+.footer-links a:hover {
+    color: var(--StrongCyan);
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.attribution {
+    margin: 30px auto;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:1000px) {
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .download-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .download-buttons a {
+        width: 200px;
+    }
+
+    p {
+        max-width: 500px;
+        margin-inline: auto;
+    }
+
+    .features.first {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .features.first img {
+        transform: translateX(-16%);
+    }
+
+    .features.first .feature {
+        align-items: flex-start;
+
+    }
+
+    .features.first p {
+        text-align: left;
+        margin-inline: unset;
+    }
+
+    .features.second {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    /* 
+    .features.second * {
+        border: 1px solid red;
+    } */
+
+    .features.second img {
+        width: 60px;
+        height: 50px;
+    }
+
+    .brands {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+
+    .footer-links {
+        display: flex;
+        gap: 50px;
+    }
+
+    .footer-links div {
+        align-items: flex-start;
+    }
+
+}
